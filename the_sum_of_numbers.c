@@ -11,7 +11,7 @@ int main()
 
 	for (int i = 0; i < N; i++)
 	{
-		sum += arr[i] - 48;
+		sum += arr[i] - 48;		//sum += arr[i] - '0'; 으로도 작성가능  // 48 = 아스키 코드 숫자문자 '0'  //ex) 입력된 문자 '1'(49,arr[i])에서 문자 '0'(48)을 빼주면 '숫자' 1
 	}
 
 	printf("%d\n", sum);
