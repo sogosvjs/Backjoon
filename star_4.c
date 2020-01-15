@@ -1,3 +1,12 @@
+/*별찍기_2441번
+
+*****
+ ****
+  ***
+   **
+    **/
+
+//3중 for문 //내 풀이
 #include <stdio.h>
 
 int main()
@@ -20,3 +29,22 @@ int main()
 		printf("\n");
 	}
 }
+
+/* 2중 for문
+#include <stdio.h>
+
+int main() {
+	int n;
+	scanf("%d", &n);
+	for (int i = 1; i <= n; ++i) {
+		for (int j = 1; j <= i - 1; ++j) {
+			printf(" ");
+		}
+		for (int j = 1; j <= n - i + 1; ++j) {
+			printf("*");
+		}
+		puts("");
+	}
+	return 0;
+}
+*/
