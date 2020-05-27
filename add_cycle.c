@@ -15,7 +15,7 @@ int main() {
 	num_10 = num10;
 	num_1 = num1;
 
-	while (1)
+	while (1)	//조건문을 따로 쓰는 것이 효율적인가..? 
 	{
 		snum = num10 + num1;    //8=2+6	//14=6+8
 		
