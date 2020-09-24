@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-//#include <malloc.h>	// _msize ºñÇ¥ÁØ ÇÔ¼öÀÌ¹Ç·Î ÄÄÆÄÀÏ·¯¸¶´Ù È£È¯ÀÌ ¾È µÉ ¼öµµ ÀÖÀ½
+//#include <malloc.h>	// _msize ë¹„í‘œì¤€ í•¨ìˆ˜ì´ë¯€ë¡œ ì»´íŒŒì¼ëŸ¬ë§ˆë‹¤ í˜¸í™˜ì´ ì•ˆ ë  ìˆ˜ë„ ìˆìŒ
 
 typedef struct
 {
@@ -9,7 +9,8 @@ typedef struct
 	int height;
 } Bulk;
 
-void compareRanking(Bulk*, int*);
+//void compareRanking(Bulk*, int*);
+void compareRanking(Bulk*, int);
 
 int main()
 {
@@ -23,24 +24,26 @@ int main()
 	for (int i = 0; i < nInput; i++)
 		scanf("%d %d", &People[i].weight, &People[i].height);
 	
-	compareRanking(People, &nInput);
-
+	//compareRanking(People, &nInput);	//êµ³ì´ ì£¼ì†Œê°’ì´ ì•„ë‹Œ ê°’ìœ¼ë¡œ ë„˜ê²¨ì¤˜ë„ ì˜ ì‘ë™.
+	compareRanking(People, nInput);
+	
 	free(People);
 
 	return 0;
 
 }
 
-void compareRanking(Bulk* People, int* n)
+//void compareRanking(Bulk* People, int n*)
+void compareRanking(Bulk* People, int n)
 {
-	//int n = _msize(People) / sizeof(bulk);	// µ¿ÀûÇÒ´çµÈ ¸Ş¸ğ¸®ÀÇ Å©±â¸¦ ±¸ÇÏ·Á¸é malloc.h Çì´õ ÆÄÀÏ¿¡¼­ Á¦°øÇÏ´Â _msize ÇÔ¼ö¸¦ »ç¿ë 
-	//										// _msize ÇÔ¼ö´Â Æ÷ÀÎÅÍ º¯¼ö°¡ °¡¸®Å°´Â ¸Ş¸ğ¸®ÀÇ Å©±â¸¦ ¾Ë·ÁÁÖ´Â ÇÔ¼ö
+	//int n = _msize(People) / sizeof(bulk);	// ë™ì í• ë‹¹ëœ ë©”ëª¨ë¦¬ì˜ í¬ê¸°ë¥¼ êµ¬í•˜ë ¤ë©´ malloc.h í—¤ë” íŒŒì¼ì—ì„œ ì œê³µí•˜ëŠ” _msize í•¨ìˆ˜ë¥¼ ì‚¬ìš© 
+	//										// _msize í•¨ìˆ˜ëŠ” í¬ì¸í„° ë³€ìˆ˜ê°€ ê°€ë¦¬í‚¤ëŠ” ë©”ëª¨ë¦¬ì˜ í¬ê¸°ë¥¼ ì•Œë ¤ì£¼ëŠ” í•¨ìˆ˜
 	int nCount;
 
-	for (int i = 0; i < *n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		nCount = 1;
-		for (int j = 0; j < *n; j++)
+		for (int j = 0; j < n; j++)
 		{
 			if (i != j)
 			{
