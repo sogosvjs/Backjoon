@@ -24,7 +24,7 @@ int main()
 	for (int i = 0; i < nInput; i++)
 		scanf("%d %d", &People[i].weight, &People[i].height);
 	
-	//compareRanking(People, &nInput);	//굳이 주소값이 아닌 값으로 넘겨줘도 잘 작동.
+	//compareRanking(People, &nInput);	//굳이 주소값이 아닌 값으로 넘겨줘도 잘 작동 // 포인터를 사용해 주소값을 넘겨주는 것은 원본 값을 변경할 필요가 있을 때!
 	compareRanking(People, nInput);
 	
 	free(People);
