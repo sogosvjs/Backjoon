@@ -48,8 +48,8 @@ int main()
 	  ...
 
 
-	  -> Basket 개수의 배수 일 때     Max basket - Min basket = Basket -1 개
-	  -> Basket 개수의 배수가 아닐 때 Max basket - Min basket = Basket의 개수
+	  -> 공의 개수가 Basket 개수의 배수 일 때     Max basket - Min basket = Basket -1 개
+	  -> 공의 개수가 Basket 개수의 배수가 아닐 때 Max basket - Min basket = Basket의 개수
 
 	///////////////////
 	*/
