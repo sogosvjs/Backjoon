@@ -12,11 +12,11 @@ int main()
 	/*
 	///////////////////
 	
-	Basket 3°³
-	  *
+     - Basket 3ê°œ
+	  *						
 	  *  *
 	  *  *  *
-	  basket 3°³ÀÏ ¶§ °øÀÇ ÃÖ¼Ò °³¼ö  = 6°³ (3 + 2 + 1) 
+	  basket 3ê°œì¼ ë•Œ ê³µì˜ ìµœì†Œ ê°œìˆ˜  = 6ê°œ (3 + 2 + 1) 
 	  Max basket(3) - Min basket(1) = 2
 
 	  
@@ -24,36 +24,38 @@ int main()
 	  *  
 	  *  *  
 	  *  *  *  
-	  °øÀÇ °³¼ö 7°³
+	  ê³µì˜ ê°œìˆ˜ 7ê°œ
 	  Max basket(4) - Min basket(1) = 3
 
 	  *
 	  *  *
 	  *  *
 	  *  *  *
-	  °øÀÇ °³¼ö 8°³
+	  ê³µì˜ ê°œìˆ˜ 8ê°œ
 	  Max basket(4) - Min basket(1) = 3
 
 	  *
 	  *  *
 	  *  *  *
 	  *  *  *
-	  °øÀÇ °³¼ö 9°³
+	  ê³µì˜ ê°œìˆ˜ 9ê°œ
 	  Max basket(4) - Min basket(2) = 2		
 	  
-	  basket n°³ÀÏ ¶§µµ µ¿ÀÏ
+	  
+	  
+     - Basket nê°œì¼ ë•Œë„ ë™ì¼
 	  ...
 	  ...
 
 
-	  -> Basket °³¼öÀÇ ¹è¼ö ÀÏ ¶§ Basket -1 °³
-	  -> Basket °³¼öÀÇ ¹è¼ö°¡ ¾Æ´Ò ¶§ BasketÀÇ °³¼ö
+	  -> Basket ê°œìˆ˜ì˜ ë°°ìˆ˜ ì¼ ë•Œ     Max basket - Min basket = Basket -1 ê°œ
+	  -> Basket ê°œìˆ˜ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ ë•Œ Max basket - Min basket = Basketì˜ ê°œìˆ˜
 
 	///////////////////
 	*/
 
-	// °øÀÇ ÃÖ¼Ò °³¼ö°¡ basketÀÇ °³¼ö¸¦ 1ºÎÅÍ ¸ğµÎ ´õÇÑ °Íº¸´Ù °°°Å³ª Ä¿¾ßÇÔ 
-	if (((nBasket * (nBasket + 1)) / 2) > nBall)	// 1 ~ n ±îÁöÀÇ ÇÕ = (n * (n + 1)) / 2
+	// ê³µì˜ ìµœì†Œ ê°œìˆ˜ê°€ basketì˜ ê°œìˆ˜ë¥¼ 1ë¶€í„° ëª¨ë‘ ë”í•œ ê²ƒë³´ë‹¤ ê°™ê±°ë‚˜ ì»¤ì•¼í•¨ 
+	if (((nBasket * (nBasket + 1)) / 2) > nBall)	// 1 ~ n ê¹Œì§€ì˜ í•© = (n * (n + 1)) / 2
 		printf("%d\n", -1);
 	else if (nBall % nBasket == 0)
 		printf("%d\n", nBasket - 1);
